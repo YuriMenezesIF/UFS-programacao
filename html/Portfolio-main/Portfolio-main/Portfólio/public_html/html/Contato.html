@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="pt-br">
+    
+    <head>
+        <title>Portfolio Html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/portfolio.css">
+        <meta name="description" content="Portfólio Profissional sobre a carreira acadêmica do aluno Yuri Menezes Andrade">
+        <meta name="keywords" content="Portfólio,acadêmico,Yuri">
+        <meta name="author" content="Yuri Andrade">
+    </head>
+    <body>
+        <div id="nav" >
+            <a href="Inicio.html" id="inicio">Inicio</a>
+            <a href="Projetos.html" id="projetos">Projetos</a>
+            <a href="Contato.html" id="contato">Contato</a>
+            <a href="Sobre.html" id="sobre">Sobre</a>
+        </div>
+
+
+
+        <div class="container">
+            <div >
+                <h2>Me Contate</h2>
+                <p>Escreva seus principais questionamentos ou ofertas para empregos:</p>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="../img/yuri.jpeg" alt="Foto do desenvolvedor" class="imagemC">
+                </div>
+                <div class="column">
+                    <form action="Inicio.html" >
+                        <label for="prinome">Primeiro Nome</label>
+                        <input type="text" id="prinome" name="primeironome" placeholder="Seu primeiro nome...">
+                        <label for="unome">Ultimo Nome</label>
+                        <input type="text" id="unome" name="ultimonome" placeholder="Seu ultimo nome....">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail....">
+
+                        <label for="country">Pais</label>
+                        <select id="country" name="country">
+                            <option value="inglaterra">Inglaterra</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="brasil">Brasil</option>
+                        </select>
+                        <label for="subject">Assunto</label>
+                        <textarea id="subject" name="subject" placeholder="Digite sua proposta...." ></textarea>
+                       
+                        
+                    </form>
+                    <input onclick="enviando()" type="submit" value="Submit"> 
+                </div>
+            </div>
+        </div>
+        
+        <div id="mensagem">Enviando mensagem..
+        Mensagem enviada</div>    
+        
+        <script src="../script/contato.js"></script>
+    </body>
+</html>
+
+
+

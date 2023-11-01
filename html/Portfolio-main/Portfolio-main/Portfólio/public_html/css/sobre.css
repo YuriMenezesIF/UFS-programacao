@@ -1,0 +1,162 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/12/2019, 19:59:23
+    Author     : Yuri
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #242943;
+
+}
+header{
+    font-family:Zapf-Chancery;
+    color:white;
+    font: cursive;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    background: #242943;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #2e3450;
+}
+h1{
+    margin-left:25px;
+    text-align: left;
+}
+h2{
+    text-align:center;
+}
+#nav a {
+    position: absolute; 
+    left: -80px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 100px; 
+    text-decoration: none; 
+    font-size: 15px; 
+    color: white; 
+    border-radius: 0 5px 5px 0; 
+}
+
+#nav a:hover {
+    left: 0; 
+}
+
+
+#inicio {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#projetos {
+    top: 80px;
+    background-color: #2196F3; 
+}
+
+#contato {
+    top: 140px;
+    background-color: #f44336; 
+}
+
+#sobre {
+    top: 200px;
+    background-color: #555 
+}
+.card {
+    margin-top: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    font-family: arial;
+}
+#nome{
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+img{
+    width:100%;
+}
+#mensagem {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin-left: -125px; 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+}
+
+#mensagem.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+

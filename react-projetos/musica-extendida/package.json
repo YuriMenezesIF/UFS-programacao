@@ -3,9 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    
+
+    "start": "vite start",
     "build": "vite build",
-    "preview": "vite preview"
+    "test": "vite test",
+    "eject": "vite eject"
+    
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",

@@ -1,0 +1,401 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23/11/2019, 12:40:51
+    Author     : Yuri
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #242943;
+
+}
+header{
+    font-family:Zapf-Chancery;
+    color:white;
+    font: cursive;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 30px;
+    background: #242943;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #2e3450;
+}
+h1{
+    margin-left:25px;
+    text-align: left;
+}
+#nav a {
+    position: absolute; 
+    left: -80px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 100px; 
+    text-decoration: none; 
+    font-size: 15px; 
+    color: white; 
+    border-radius: 0 5px 5px 0; 
+}
+
+#nav a:hover {
+    left: 0; 
+}
+
+
+#inicio {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#projetos {
+    top: 80px;
+    background-color: #2196F3; 
+}
+
+#contato {
+    top: 140px;
+    background-color: #f44336; 
+}
+
+#sobre {
+    top: 200px;
+    background-color: #555 
+}
+
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.slideshow-container {
+    margin-top: 50px;
+    max-width: 1000px;
+    position: relative;
+    margin-left:auto;
+    margin-bottom: auto;
+    margin-right: auto;
+
+}
+div{
+    text-align:center;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.end{
+    text-align:center;
+}
+p{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color:white;
+}
+
+section{
+
+    margin-top: 50px;
+    margin-left: 530px;
+    width: 1025px;
+    height: 150px;
+}
+#ui{
+    color: white;
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 1000px;
+    height: 150px;
+}
+.f{
+    color:white;
+}
+.redes{
+
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-left: 20px;
+    transition: all 0.4s ease-out;
+    border-radius: 70%;
+}
+
+.redes:hover{
+    vertical-align: middle;
+    cursor: pointer;
+    transform: translateY(-20px);
+    box-shadow: 4px 30px 16px 0px rgba(50,50,50, 0.45);
+}
+
+.redes#facebook{
+    background-color: #2372a3;
+
+}
+.redes#twitter{
+    background-color: #0084b4;
+}
+.redes#youtube{
+    background-color: #8B0000;
+}
+
+.icone{
+    box-sizing: content-box;
+    margin:0px auto;
+    padding: 20px;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* Pagina de Contato HTML */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    color: black;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+textarea{
+    height:170px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* Pagina de Contato HTML */
+.container {
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    color: white;
+    padding: 30px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.imagemC{
+    width:70%;
+    margin-left: 80px;
+}
+
+
+#mensagem {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin-left: -125px; 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+}
+
+#mensagem.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+
+
+
+
+/* Responsividade das páginas Contato,Inicio e Sobre.html */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .slideshow-container{
+        margin-left: 50px;
+        max-width: 400px;
+
+    }
+    .end{
+        margin-left: 0px;
+        text-align: match-parent;
+    }
+    header{
+        width:1000px;
+
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        margin-left: 50px;
+        margin-right: 0;
+        font-size: 25px;
+
+    }
+    section{
+        margin-left: 60px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width:800px) {
+    .column, input[type=submit] {
+        width: 80%;
+        margin-top: 0;
+
+    }
+    .slideshow-container{
+        max-width: 500px;
+    }
+    section{
+        margin-left: 160px;
+    }
+
+}
+@media screen and (min-width: 800px) {
+    input[type=submit]:hover {
+        background-color: #45a049;
+        color: white;
+    }
+    .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        color: white;
+        padding: 30px;
+    }
+    .slideshow-container{
+        max-width:600px;
+    }
+    section{
+        margin-left: 250px;
+    }
+
+}
+@media screen and (min-width: 900px) {
+    section{
+        margin-left: 410px;
+    }
+}
+@media screen and (min-width: 1140px) {
+    section{
+        margin-left: 545px;
+    }
+}

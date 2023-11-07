@@ -1,0 +1,129 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/12/2019, 15:52:59
+    Author     : Yuri
+*/
+#nav a {
+    position: absolute; 
+    left: -80px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 100px; 
+    text-decoration: none; 
+    font-size: 15px; 
+    color: white; 
+    border-radius: 0 5px 5px 0; 
+}
+
+#nav a:hover {
+    left: 0; 
+}
+
+
+#inicio {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#projetos {
+    top: 80px;
+    background-color: #2196F3; 
+}
+
+#contato {
+    top: 140px;
+    background-color: #f44336; 
+}
+
+#sobre {
+    top: 200px;
+    background-color: #555 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242943;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+    color: white;
+}
+h2,#titulo{
+    color:white;  
+}
+
+.row {
+    margin: 8px -16px;
+}
+img{
+    width: 100%;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 800px) {
+    .column {
+        width: 50%;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:800px){
+    .column {
+        width: 90%;
+        margin-left: 30px;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+    h1{
+        font-size: 35px;
+    }
+}
+
